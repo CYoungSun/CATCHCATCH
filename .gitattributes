@@ -1,4 +1,8 @@
 exec/CatchCatch[[:space:]]Setup[[:space:]]1.0.0.exe filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
 exec/CatchCatch filter=lfs diff=lfs merge=lfs -text
 Setup filter=lfs diff=lfs merge=lfs -text
 1.0.0.exe filter=lfs diff=lfs merge=lfs -text
+=======
+*.exe filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 6312311f3cbd62533f7a2baac3a77740153a167c

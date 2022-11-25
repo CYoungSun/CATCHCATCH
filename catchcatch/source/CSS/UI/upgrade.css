@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+}
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vmin;
+  /* width: 100%; */
+}
+
+.upgradeContainer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 120vmin;
+  height: 80vmin;
+  /* border: 6px solid black; */
+  justify-content: center;
+  z-index: 101;
+}
+
+.upgradeType {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 20vmin; */
+  /* border: 6px solid red; */
+}
+
+.upgradeContent {
+  display: flex;
+  width: 130vmin;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 6px solid yellow; */
+}
+.playerType {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* position: relative;
+  width: 30px;
+  height: 30px;
+  border: 6px solid red;
+  top: 80px;
+  right: 20px; */
+  /* border: 6px solid orange; */
+}
+.weaponType {
+  position: relative;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  width: 45px;
+  height: 45px;
+  top: 75px;
+  right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-image: url("../../../public/images/ui/weaponicon.png");
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+}
+
+.towerType {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  top: 85px;
+  right: 5px;
+  background-image: url("../../../public/images/ui/towericon.png");
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.towerIcons {
+  display: flex;
+  width: 60vmin;
+  height: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 6px solid purple; */
+}
+
+.weaponIcons {
+  display: flex;
+  width: 100vmin;
+  height: 64px;
+  /* height: 15%; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 6px solid purple; */
+}
+
+.weaponicon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.weaponImg {
+  width: 50px;
+  height: 50px;
+
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.tower1234 {
+  display: flex;
+  /* width: 19vmin; */
+  margin-left: 20px;
+
+  height: 55%;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tower {
+  border: 6px solid salmon;
+}
+
+.towerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  right: 70px;
+  width: 40%;
+  height: 50%;
+}
+
+.weaponContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  margin-bottom: 55px;
+}
+
+.levelContent {
+  display: flex;
+  width: 100vmin;
+  height: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 6px solid purple; */
+}
+.level {
+  position: relative;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+  width: 60px;
+  margin-top: 100px;
+  left: 5px;
+  text-align: center;
+  color: black;
+}
+.fairyicon {
+  width: 120px;
+  height: 55px;
+  border-radius: 5%;
+  border: 4px solid rgb(244, 255, 90);
+}
+
+.levels {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.levelss {
+  height: 10%;
+  width: 60%;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+  /* font-size: small; */
+  /* color: wh; */
+  /* border: white solid 5px; */
+  line-height: 40px;
+}
+
+.con {
+  /* text-align: center; */
+  display: flex;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+  font-size: small;
+  line-height: 110px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+.towerskillimg {
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid black; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.property {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.propertyimg {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  /* background-image: url("../../../public/images/ui/Icon/tower/1.png"); */
+  /* border: 2px solid black; */
+}
+
+.homeBtn {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  left: -4px;
+  bottom: 70px;
+}
+
+.box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: 10px;
+  line-height: 30px;
+  width: 150px;
+  height: 30px;
+  top: -30px;
+}

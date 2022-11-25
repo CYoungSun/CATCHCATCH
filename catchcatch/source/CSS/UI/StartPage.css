@@ -1,0 +1,478 @@
+.StartPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+  width: 1200px;
+  height: 700px;
+  position: relative;
+
+  /* border: 2px solid red; */
+}
+
+.Logo {
+  position: relative;
+  top: 5%;
+}
+
+.StartPage .AllBtnList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 1000px;
+  height: 300px;
+  /* border: 2px solid red; */
+}
+.StartPage .StartBtnList {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .StartPage .Logo {
+}
+
+.StartPage .GoSelectCharId {
+}
+
+.StartPage .QuitGameId {
+}
+
+.StartPage .RankedId {
+} */
+
+.StartBtn {
+  background: url("../../../public/images/ui/btn_idle.png") center no-repeat;
+  background-size: contain;
+  font-size: x-large;
+  font-family: "KenneyBlocks";
+  width: 260px;
+  height: 70px;
+  border: none;
+  color: white;
+  padding: 0;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.StartBtn:active {
+  background: url("../../../public/images/ui/btn_click.png") center no-repeat;
+  background-size: contain;
+  color: gray;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.CodeStartBtn {
+  background: url("../../../public/images/ui/blue_click.png") center no-repeat;
+
+  background-size: contain;
+  font-size: x-large;
+  font-family: "KenneyBlocks";
+  width: 260px;
+  height: 70px;
+  border: none;
+  color: white;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.CodeStartBtn:active {
+  background: url("../../../public/images/ui/blue_active.png") center no-repeat;
+  background-size: contain;
+  color: gray;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.RankingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 390px;
+  width: 390px;
+  overflow: auto;
+}
+
+.RankingList {
+  /* display: flex; */
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  background: url("../../../public/images/ui/Rankingbackround.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.RankingSpace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.InputTemp {
+  display: flex;
+  margin-top: 30px;
+  width: 400px;
+  height: 100px;
+  /* border: 3px solid black; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InputSpace {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  /* justify-content: center; */
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 350px;
+  height: 25px;
+  margin-top: 15px;
+}
+.InputArea {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 25px;
+  font-size: large;
+  font-weight: bold;
+  font-family: "neodgm";
+  border: 4px solid #0388c1;
+  border-radius: 5px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+.InputArea:focus {
+  outline: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.RankingSearchBtn {
+  width: 40px;
+  height: 40px;
+  background: url("../../../public/images/ui/serachBtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  font-family: "neodgm";
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+.RankingSearchBtn:active {
+  background: url("../../../public/images/ui/serachBtnclick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  color: gray;
+}
+
+.BlankTemp {
+  background: url("../../../public/images/ui/RankingListSlot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  /* border: 3px solid white; */
+  justify-content: center;
+}
+
+.RankingTemp {
+  background: url("../../../public/images/ui/RankingListSlot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  /* border: 3px solid white; */
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+.GradeSpace {
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 45px;
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+  font-family: "KenneyBlocks";
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgb(255, 74, 74);
+}
+.NameSpace {
+  width: 200px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  /* font-family: ""; */
+  line-height: 50px;
+  margin-right: 10px;
+  /* margin-left: 12px; */
+}
+
+.ScoreSpace {
+  width: 90px;
+  height: 50px;
+  max-width: 90px;
+  min-width: 90px;
+  /* border: 2px solid black; */
+  text-align: end;
+  font-size: x-large;
+  font-family: "KenneyBlocks";
+  line-height: 45px;
+  color: rgb(46, 112, 255);
+  margin-right: 10px;
+}
+
+.RankingBack {
+  width: 30px;
+  height: 30px;
+  /* border: 3px solid black; */
+  position: absolute;
+  background: url("../../../public/images/ui/backicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  left: 5px;
+  top: 22px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.RankingBack:active {
+  background: url("../../../public/images/ui/backiconclick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.cheat {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  z-index: -1;
+}
+
+.areaspace_1 {
+  background: url("../../../public/images/ui/areaspace/1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+.areaspace_2 {
+  background: url("../../../public/images/ui/areaspace/2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+.areaspace_3 {
+  background: url("../../../public/images/ui/areaspace/3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+.areaspace_4 {
+  background: url("../../../public/images/ui/areaspace/4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+.areaspace_5 {
+  background: url("../../../public/images/ui/areaspace/5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+
+.areaspace_6 {
+  background: url("../../../public/images/ui/areaspace/1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  width: 120px;
+  height: 50px;
+  /* border: 2px solid black; */
+  text-align: center;
+  line-height: 50px;
+  font-family: "neodgm";
+  color: black;
+}
+
+.download {
+  position: absolute;
+  top: 30px;
+  right: -120px;
+}
+
+.downImg {
+  width: 60px;
+}
+
+.all_tapBtn {
+  text-align: center;
+  line-height: 40px;
+  font-family: "neodgm";
+  font-weight: bold;
+  color: black;
+  background: url("../../../public/images/ui/allbtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.all_tapBtn:active {
+  color: gray;
+  background: url("../../../public/images/ui/allbtn_click.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.seven_tapBtn {
+  text-align: center;
+  line-height: 40px;
+  font-family: "neodgm";
+  font-weight: bold;
+  color: black;
+  background: url("../../../public/images/ui/serachBtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.seven_tapBtn:active {
+  color: gray;
+  background: url("../../../public/images/ui/serachBtnclick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.eight_tapBtn {
+  text-align: center;
+  line-height: 40px;
+  font-family: "neodgm";
+  font-weight: bold;
+  color: black;
+  background: url("../../../public/images/ui/8thbtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.eight_tapBtn:active {
+  color: gray;
+  background: url("../../../public/images/ui/8thbtn_click.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}

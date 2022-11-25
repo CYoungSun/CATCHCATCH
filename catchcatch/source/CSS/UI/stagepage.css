@@ -1,0 +1,116 @@
+.stagePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 750px;
+  height: 500px;
+  background: url("../../../public/images/ui/Stagebackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  position: relative;
+  /* border: 2px solid red; */
+  /* border: 6px solid blue; */
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 170px;
+  /* margin-top: 20px; */
+  background: url("../../../public/images/ui/StagePanel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  align-items: center;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* border: 6px solid red; */
+}
+.stage:hover {
+  background: url("../../../public/images/ui/stageclickpanel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.stagelevel {
+  display: flex;
+  margin-top: 7px;
+  width: 100px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.stagestar {
+  width: 30px;
+  height: 30px;
+}
+
+.debugmode {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  width: 300px;
+  height: 40px;
+  /* border: 2px solid black; */
+  /* line-height: 100px; */
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  /* text-align: center; */
+}
+
+.debugicon {
+  /* position: absolute; */
+  /* background: url("../../../public/images/ui/backicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  margin-right: 5px;
+  border: 5px solid greenyellow;
+  width: 20px;
+  height: 20px;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.stageText {
+  margin-top: 40px;
+  width: 180px;
+  height: 100px;
+  text-align: center;
+  /* line-height: 100px; */
+  font-size: 20px;
+  font-weight: bold;
+  /* border: 2px solid black; */
+}
+
+.BackIcon {
+  position: absolute;
+  background: url("../../../public/images/ui/backicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  width: 30px;
+  height: 30px;
+  left: 8px;
+  top: 8px;
+}
+.BackIcon:active {
+  background: url("../../../public/images/ui/backiconclick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}

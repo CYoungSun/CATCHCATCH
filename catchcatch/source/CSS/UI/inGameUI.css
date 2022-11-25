@@ -1,0 +1,466 @@
+#progress {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 30%;
+  transform: translateX(-50%) translateY(-50%);
+  appearance: none;
+  z-index: 1;
+}
+
+#progress::-webkit-progress-bar {
+  /* background: #f0f0f0; */
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 10px #ccc;
+  background: url("../../../public/images/ui/barHorizontal_shadow_mid.png");
+}
+#progress::-webkit-progress-value {
+  border-radius: 10px;
+  background-image: url("../../../public/images/ui/barHorizontal_green_mid.png");
+  /* background: -webkit-linear-gradient(to right, #93f9b9, #1d976c); */
+  /* background: linear-gradient(to right, #93f9b9, #1d976c); */
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  width: 8%;
+  height: 20%;
+  /* border: blue solid 6px; */
+}
+
+.levelText {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  color: white;
+  top: 3.2%;
+  left: 50%;
+  font-weight: bold;
+  text-align: center;
+  font-family: "KenneyBlocks";
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.stat {
+  /* border: red solid 6px; */
+  height: 5%;
+  color: white;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+}
+
+.catCoin {
+  width: 100%;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+  font-size: x-large;
+  /* text-align: center; */
+  color: white;
+  /* border: black solid 2px; */
+}
+.stats #heal {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  /* text-align: end; */
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.stats #dmgMul {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  /* text-align: end; */
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.stats #speed {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  /* text-align: end; */
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.healTxt {
+  position: absolute;
+  left: 28px;
+  top: 4px;
+}
+
+.dmgMulTxt {
+  position: absolute;
+  left: 28px;
+  top: 4px;
+}
+
+.speedTxt {
+  position: absolute;
+  left: 28px;
+  top: 4px;
+}
+
+.holeHp {
+  display: flex;
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  /* transform: translateX(-50%) translateY(-50%); */
+  width: 8%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.gameOverContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gameOver {
+  font-size: 100px;
+}
+
+.again {
+  width: 50%;
+  height: 50%;
+}
+.Timer {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: xx-large;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.GameClearSpace {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 500px;
+  height: 300px;
+  background: url("../../../public/images/ui/clearspace.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  animation: fadein 3s;
+  /* -webkit-animation: fadein 3s; */
+  /* border: 2px solid white; */
+  /* background-color: white; */
+}
+
+.ClearText {
+  margin-bottom: 70px;
+  width: 360px;
+  height: 60px;
+  background: url("../../../public/images/ui/Gameclear.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.FailText {
+  /* margin-bottom: 70px; */
+  width: 360px;
+  height: 60px;
+  background: url("../../../public/images/ui/gameover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.GoHomeBtn {
+  width: 150px;
+  height: 50px;
+  background: url("../../../public/images/ui/homeicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: url("../../../public/images/cursor/mouseSelect.png"), pointer;
+}
+
+.coolContainer {
+  display: flex;
+  background-image: url("../../../public/images/ui/ingameweaponslot.png");
+  background-size: contain;
+  width: 360px;
+  height: 80px;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  justify-content: space-between;
+  transform: translateX(-50%) translateY(-50%);
+  /* border: 2px solid red; */
+}
+
+.resultspace {
+  position: relative;
+  width: 260px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  /* border: 2px solid black; */
+}
+
+.canimg {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url("../../../public/images/canicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.fairy > img {
+  margin-top: 5px;
+  margin-left: 2.5px;
+  border-radius: 10px;
+  width: 55px;
+}
+
+.cantxt {
+  position: absolute;
+  top: 50px;
+  left: 75%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: x-large;
+  font-family: "KenneyBlocks";
+  font-weight: bold;
+}
+
+html {
+  --wizard: 4;
+  --reaper: 4;
+  --ninja: 4;
+  --slime: 4;
+  --witch: 4;
+}
+
+@property --percentage {
+  initial-value: 0%;
+  inherits: false;
+  syntax: "<percentage>";
+}
+
+.fairy {
+  margin-left: 10px;
+  margin-top: 10px;
+  /* margin-right: 10px; */
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+
+  overflow: hidden;
+  position: absolute;
+  /* border: 6px solid red; */
+}
+.wizard {
+  margin-left: 10px;
+}
+.reaper {
+  left: 70px;
+}
+.ninja {
+  left: 140px;
+}
+.slime {
+  left: 210px;
+}
+.witch {
+  left: 280px;
+  margin-right: 10px;
+}
+
+.wizardActive {
+  /* background: url("../../../public/images/ui/Icon/char/fairy1.png"); */
+  z-index: 1;
+}
+.reaperActive {
+  /* background: url("../../../public/images/ui/Icon/char/fairy2.png"); */
+  z-index: 1;
+}
+.ninjaActive {
+  /* background: url("../../../public/images/ui/Icon/char/fairy3.png"); */
+  z-index: 1;
+}
+.slimeActive {
+  /* background: url("../../../public/images/ui/Icon/char/fairy4.png"); */
+  z-index: 1;
+}
+.witchActive {
+  /* background: url("../../../public/images/ui/Icon/char/fairy5.png"); */
+  z-index: 1;
+}
+
+@keyframes timer {
+  to {
+    --percentage: 100%;
+  }
+}
+
+.bossMessage {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 30px;
+  text-align: center;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+
+.tutorialKey {
+  position: absolute;
+  width: 320px;
+
+  top: 50%;
+  left: 20%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tutorialMouse {
+  position: absolute;
+  width: 250px;
+  top: 50%;
+  right: 20%;
+  transform: translateX(+50%) translateY(-50%);
+}
+.tutorialNumber {
+  position: absolute;
+  width: 470px;
+  bottom: 17%;
+  left: 54%;
+  transform: translateX(-50%) translateY(+50%);
+}
+
+.tutorialSpace {
+  position: absolute;
+  width: 200px;
+  bottom: 7%;
+  right: 10%;
+}
+
+.tutorialLevel {
+  position: absolute;
+  width: 100px;
+  top: 30%;
+  right: 2%;
+}
+.tutorialCoin {
+  position: absolute;
+  width: 100px;
+  top: 25%;
+  right: 2%;
+}
+.tutorialHp {
+  position: absolute;
+  width: 100px;
+  top: 27%;
+  right: 9%;
+}
+
+.tutorialStat {
+  position: absolute;
+  bottom: 7%;
+  left: 12.5%;
+  width: 200px;
+}
+
+.back {
+  display: none;
+  overflow-y: hidden;
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+}
+
+.fever {
+  font-size: 50px;
+  /* Standar Syntax */
+  animation: rainbow 3s infinite;
+}
+
+/* Standar Syntax */
+@keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: CadetBlue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  70% {
+    color: cyan;
+  }
+  80% {
+    color: DeepPink;
+  }
+  90% {
+    color: DodgerBlue;
+  }
+  100% {
+    color: orange;
+  }
+}
